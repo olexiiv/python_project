@@ -1,4 +1,4 @@
-import random
+import secrets
 
 small = "abcdefghijklmnopqrstuvwxyz"
 big = small.upper()
@@ -11,5 +11,5 @@ passwd = ""
 print("\n===Генерація паролів===")
 count_char = int(input("Скільки символів в паролі? "))
 for char in range(count_char):
-  passwd += random.choice(bag)
+  passwd += secrets.choice(bag)
 print(passwd)
